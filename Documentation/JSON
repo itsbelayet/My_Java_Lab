@@ -1,0 +1,40 @@
+
+JSON Object
+{
+    "employee": {
+        "id": 1,
+        "name": "Miru",
+        "location": "USA"
+    }
+}
+#-------------------------------
+
+JSON Array
+{
+    "employees": [
+        {
+            "id": 1,
+            "fname": "Mohammed",
+            "lname": "Hossain",
+            "address": "Queens, NY"
+        },
+        {
+            "id": 2,
+            "fname": "Zakir",
+            "lname": "Hossain",
+            "address": "Bronx, NY"
+        },
+        {
+            "id": 3,
+            "fname": "Enayet",
+            "lname": "Hossain",
+            "address": "Brooklyn, NY"
+        },
+        {
+            "id": 4,
+            "fname": "Ismat",
+            "lname": "Begum",
+            "address": "Manhattan, NY"
+        }
+    ]
+}

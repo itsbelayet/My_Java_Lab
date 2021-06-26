@@ -1,0 +1,59 @@
+public class ClientTest {
+
+	public static void main(String[] args) throws SQLException   {
+
+		String SQL="INSERT INTO storetextfile_table (file_name,file_size_in_kb,file_extension,file_content)VALUES(?,?,?,?)";
+		Path dir = Paths.get("InputFiles");
+		try(Stream<Path> list = Files.list(dir);Connection connection = DBUtil.getConnection();
+				PreparedStatement ps = connection.prepareStatement(SQL)) {
+
+			List<Path> pathList = list.collect(Collectors.toList());
+			System.out.println("Following files are saved in database..");
+			for (Path path : pathList) {
+				System.out.println(path.getFileName());
+				File file = path.toFile();
+				String fileName = file.getName();
+				long fileLength = file.length();
+				long fileLengthInKb=fileLength/1024;
+
+				ps.setString(1, fileName);
+				ps.setLong(2, fileLengthInKb);
+
+				ps.setString(3, fileName.substring(fileName.lastIndexOf(".")+1));
+				ps.setCharacterStream(4, new FileReader(file), fileLength);
+
+				ps.addBatch();
+			}
+			System.out.println("----------------------------------------");
+			int[] executeBatch = ps.executeBatch();
+			for (int i : executeBatch) {
+				System.out.println(i);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+}
+________________
+
+public class DBUtil {
+	private static final String DB_DRIVER_CLASS="com.mysql.jdbc.Driver";
+	private static final String DB_USERNAME="root";
+	private static final String DB_PASSWORD="root";
+	private static final String DB_URL ="jdbc:mysql://localhost:3306/jdbcdb";
+
+	private static Connection connection = null;
+	static{
+		try {
+			Class.forName(DB_DRIVER_CLASS);
+			connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static Connection getConnection(){
+		return connection;
+	}
+}
