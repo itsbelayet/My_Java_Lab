@@ -8,6 +8,7 @@ public class ForLoop {
         ForLoop.DisplayLoop();
     }
 
+
     public static void DisplayLoop(){
         Scanner input = new Scanner(System.in);
         System.out.print("Enter Row Number : ");

@@ -6,6 +6,8 @@ public class Custing_or_DataConverting {
         System.out.println("******* int to double **********");
         int num = 25;
         double num1 = (double) num;
+        int nu=12;
+        double num2=(double)(num+nu)/2;
         System.out.println("Before Convert double = " + num);
         System.out.println("After Convert double = " + num1);
         System.out.println((double) 52);

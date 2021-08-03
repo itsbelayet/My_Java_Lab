@@ -22,8 +22,12 @@ public class Ara {
     }
 
     public static void main(String[] args) {
-        MethodAra();
+        int[] a={10,20,30,40,50};
+        //int x=a.length;
+        a[0]=a[a.length-1];
+        System.out.println("Test Array "+a[0]);
 
+        MethodAra();
         System.out.println("**********************\n");
 
         Ara mr = new Ara();

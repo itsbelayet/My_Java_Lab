@@ -9,6 +9,8 @@ public class LearnString {
         String lname="Hossain";
         String tname=(fname.concat(mname).concat(lname));   //Joining three String
 
+        System.out.println(fname.substring(0,3));
+
         System.out.println(tname);
 
         System.out.println(tname.length());                 //Counting total character with space

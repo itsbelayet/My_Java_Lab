@@ -75,6 +75,20 @@ public class AryList {
     public static void main(String[] args) {
         AryList al=new AryList();
         al.ALMethod();
+
+        System.out.println("\n**************");
+        ArrayList<Integer> test=new ArrayList<>();
+        test.add(10);
+        test.add(20);
+        test.add(30);
+        test.add(40);
+        test.add(50);
+
+        test.add(1,200);        // Add value(200) to 1st index of array list
+        System.out.println(test.size());     // Print array Size
+        System.out.println(test.get(1));     // Print value of 1st index of array list
+        System.out.println(test.get(test.size()-1));    // Print value of last index of array list
+
     }
 
 
