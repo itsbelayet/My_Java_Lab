@@ -4,6 +4,7 @@ public class AbstractChild extends AbstractClass implements InterfaceAABB {
     //Call Abstract Method of AbstractClass
     //Normal Method of AbstractClass can't be called. It can call by creating object of Abstract Class
     //All the Method of Interface will come
+
 //    void testMethod(){
 //        System.out.println("This is test method");
 //    }

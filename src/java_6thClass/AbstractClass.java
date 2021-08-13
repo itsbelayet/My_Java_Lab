@@ -2,6 +2,17 @@ package java_6thClass;
 
 public abstract class AbstractClass {
 
+    /*
+    //Constructor can created, Object also can created
+    AbstractClass(){
+        System.out.println("This is AbstractClass");
+    }
+    public static void main(String[] args) {
+        AbstractClass abstractClass=new AbstractChild();
+        abstractClass.AbsAA3();
+    }
+     */
+
     // Variable Declaration (Declare and Initialization can do)
     String fname;       // Only Declare
     int salary=5000;    // Declare and Initialize

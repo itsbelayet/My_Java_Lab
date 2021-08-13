@@ -19,7 +19,6 @@ public class Calculator {
         obj.DoSum(25,75,60);
         System.out.println("*******************************\n");
 
-
     }
 
 }

@@ -7,17 +7,20 @@ import java.io.IOException;
 public class ReadFromTextFile {
 
     public static void main(String[] args) throws IOException {
-        FileReader fileReader=new FileReader("DataTest/EnglishLearningSide.txt");
-        BufferedReader bufferedReader=new BufferedReader(fileReader);
-        System.out.println(bufferedReader.readLine());
-        System.out.println(bufferedReader.readLine());
-        System.out.println(bufferedReader.readLine());
-        System.out.println(bufferedReader.readLine());
-        System.out.println(bufferedReader.readLine());
-        System.out.println(bufferedReader.readLine());
-        System.out.println(bufferedReader.readLine());
-        System.out.println(bufferedReader.readLine());
-        System.out.println(bufferedReader.readLine());
-        System.out.println(bufferedReader.readLine());
+        String tempContainer;
+        String finalContainer = "";
+
+        FileReader fileReader = new FileReader("DataTest/EnglishLearningSide.txt");
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+        while ((tempContainer = bufferedReader.readLine()) != null) {
+            if (finalContainer.equals("")) {
+                finalContainer = finalContainer + tempContainer;
+            } else {
+                finalContainer = finalContainer + "\n" + tempContainer;
+            }
+        }
+        System.out.println(finalContainer);
+
     }
 }

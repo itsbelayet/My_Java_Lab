@@ -59,6 +59,7 @@ public class TestClass {
         System.out.println("*********************************\n");
         //Method Overriding
         Toyota obj2 = new Toyota();
-        obj2.Camera360();
+        obj2.camera360();
+        obj2.metter();
     }
 }
