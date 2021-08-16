@@ -6,6 +6,7 @@ public class LearnEnum {
         MIRU, HIRU, MONI, REKHA;
     }
 
+
     public static void main(String[] args) {
         Color.DisplayColor();
         System.out.println(LEnum.MIRU);
