@@ -1,6 +1,5 @@
 package basicJava;
 
-
 public class JavaTest {
     public static void main(String[] args) {
         JTest.jvTest();
@@ -9,7 +8,6 @@ public class JavaTest {
         
     }
 }
-
 
 class JTest{                // Sub Class
     static String name;

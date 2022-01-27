@@ -20,7 +20,5 @@ public class ReverseInteger {
             num=num/10;
         }
         System.out.println("After Reverse    : "+rev);
-
-
     }
 }

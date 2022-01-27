@@ -11,6 +11,5 @@ public class ReverseString {
         System.out.println("Before Reverse   : "+str+"\n");
 
         System.out.println("Reverse String is: "+(new StringBuffer(String.valueOf(str)).reverse()));
-
     }
 }

@@ -23,7 +23,6 @@ public class MergeTwoUnSortedArray {
         System.out.println("************ Sorted Array **************\n");
         System.out.println(Arrays.toString(mergeArray));
     }
-
     public static int[] merging(int[] arrayA,int[] arrayB){
 
         IntStream num = IntStream.concat(IntStream.of(arrayA), IntStream.of(arrayB));
@@ -31,13 +30,10 @@ public class MergeTwoUnSortedArray {
         int[] output=num.distinct().sorted().toArray();
         return output;
 
-
         //.sorted() --> This Method Used for Sording Data
         //.distinct() --> This Method Used for remove Duplicate Data
 
         // Another approach (Recommended)
         // return IntStream.concat(IntStream.of(arrayA), IntStream.of(arrayB)).distinct().sorted().toArray();
-
     }
-
 }

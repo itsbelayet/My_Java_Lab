@@ -35,12 +35,12 @@ public class SetUnion {
         Set<Integer> intersection=new HashSet<>(number1);
         intersection.retainAll(number2);
 
-        System.out.println("\nCommon Elements of two Arrays : "+intersection);
+        System.out.println("\nCommon Elements of two Arrays               : "+intersection);
 
         // Difference (Which elements of number1 array is not present in number2 array)
         Set<Integer> difference=new HashSet<>(number1);
         difference.removeAll(number2);
 
-        System.out.println("\nDifference of two Arrays :"+difference);
+        System.out.println("\nElements which is not present in 2nd Arrays :"+difference);
     }
 }

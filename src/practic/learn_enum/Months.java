@@ -48,5 +48,13 @@ public class Months {
         }
 
     }
+    public static void main(String[] args) {
+        Months months=new Months(EMonth.September);
+        months.whatToDo();
+    }
+
+    static {
+        System.out.println("\nThis is a static Block, So It's run first before the main Method\n");
+    }
 
 }

@@ -1,12 +1,14 @@
 package ProblemSolving;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class CheckAnagram {
 
     public static void main(String[] args) {
-        itsAnagram("CAT","ADT");
-        itsAnagram("CAT","ACT");
+        itsAnagram("CAT", "ADT");
+        itsAnagram("CAT", "ACT");
+
     }
 
     static void itsAnagram(String st1, String st2) {
@@ -18,14 +20,14 @@ public class CheckAnagram {
             char[] st2arry = st2.toLowerCase().toCharArray();
             Arrays.sort(st1arry);
             Arrays.sort(st2arry);
-            boolean stu=Arrays.equals(st1arry,st2arry);
-            if(stu==false){
-                status="Not Anagram";
-            }else {
-                status="Anagram";
+            boolean stu = Arrays.equals(st1arry, st2arry);
+            if (stu == false) {
+                status = "Not Anagram";
+            } else {
+                status = "Anagram";
             }
-            System.out.println(st1+" & "+st2+" are "+status);
         }
+        System.out.println(st1 + " & " + st2 + " are " + status);
     }
 
     // Another Approach

@@ -22,7 +22,6 @@ public class MostFrequentElement {
                 elementCountMap.put(i, 1);
             }
         }
-
         int element = 0;
 
         int frequency = 1;
@@ -38,7 +37,6 @@ public class MostFrequentElement {
                 frequency = entry.getValue();
             }
         }
-
         //Printing the most frequent element in array and its frequency
 
         if (frequency > 1) {

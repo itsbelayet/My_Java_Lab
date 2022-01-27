@@ -9,7 +9,6 @@ public class RemoveDuplicateElements {
         Object [] subj = {2,7,4,2,12,"Miru",25,7,"Hiru",1,"Miru",3,4,5};
         removDuplicate(subj);
     }
-
     public static void removDuplicate(Object[] subj){
         Set<Object> newList=new HashSet<>();        // Set did not allow duplicate Value
         for (Object element:subj) {
@@ -21,5 +20,4 @@ public class RemoveDuplicateElements {
         }
         System.out.println(newList);
     }
-
 }

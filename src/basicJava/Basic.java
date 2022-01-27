@@ -2,7 +2,7 @@ package basicJava;
 
 public class Basic extends TOOP{                        // Confusion
 
-    static String name="Miru";
+    static String name = "Miru";
     static int age;
 
     void TMethod() {
@@ -29,8 +29,8 @@ public class Basic extends TOOP{                        // Confusion
 //        }else {
 //            System.out.println("This is Local");
 //        }
-
-        Basic obj=new Basic();
+        TOOP.testOop();
+        Basic obj = new Basic();
         obj.TMethod();
 
 //**************************************************
@@ -46,10 +46,10 @@ public class Basic extends TOOP{                        // Confusion
         System.out.println(nm.isEmpty());
 
         System.out.println("********************\n");
-        VarargsMethod ob=new VarargsMethod();
-        ob.add(25,50);
-        ob.add(50,75,65);
-        ob.add(125,250,380,560);
+        VarargsMethod ob = new VarargsMethod();
+        ob.add(25, 50);
+        ob.add(50, 75, 65);
+        ob.add(125, 250, 380, 560);
 
     }
 }

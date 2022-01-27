@@ -16,7 +16,6 @@ public class Permutation {
             Permut(newName,newAlpha);   // Calling Method within Method
         }
     }
-
     public static void main(String[] args) {
         Permut("","CAT");
     }
