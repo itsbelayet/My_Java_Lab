@@ -8,6 +8,7 @@ public class Learn_String {
         String lname = new String("Hossain ");
         String nname = "Miru";
 
+        // Convert int to String
         int a = 947479857;
 //        long aa=(long) a;
 //        System.out.println(aa+947479857);

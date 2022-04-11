@@ -12,7 +12,7 @@ public class CheckAnagram {
     }
 
     static void itsAnagram(String st1, String st2) {
-        String status = null;       // or = " "
+        String status; // = null;       // or = " "
         if (st1.length() != st2.length()) {
             status = "Not Anagram";
         } else {

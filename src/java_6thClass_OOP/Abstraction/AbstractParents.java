@@ -12,4 +12,7 @@ public abstract class AbstractParents {
         System.out.println("Girls are Women");
     }
 
+    // Constructor can created
+    // Regular Method can created as well as abstract Method
+
 }
